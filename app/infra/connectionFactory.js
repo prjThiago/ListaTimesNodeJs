@@ -1,3 +1,4 @@
+/*Apenas um comentário*/
 var mysql = require('mysql');
 
 function createDBConnection() {
