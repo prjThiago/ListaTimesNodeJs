@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<form action="/times/salvar" method="post">
+			<div>
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome" />
+			</div>
+			<div>
+				<label for="estado">Estado</label>
+				<select id="estado" name="estado">
+					<% for(var i = 0; i < estados.length; i++) { %>
+						<option value="<%= estados[i].id %>"><%= estados[i].nome %></option>
+					<% } %>
+				</select>
+			</div>
+
+			<div>
+				<label for="estado">Divisões</label>
+				<select id="divisoes" name="divisoes">
+					<% for(var i = 0; i < divisoes.length; i++) { %>
+						<option value="<%= divisoes[i].id %>"><%= divisoes[i].nome %></option>
+					<% } %>
+				</select>
+			</div>
+
+			<input type="submit" value="Salvar" />
+		</form>
+	</body>
+</html>
