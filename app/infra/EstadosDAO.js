@@ -8,7 +8,7 @@ EstadosDAO.prototype.lista = function(callback){
 
 };
 
-EstadosDAO.prototype.salva = function(callback){
+EstadosDAO.prototype.salva = function(produto, callback){
 	this._connection.query('insert into estados set ?', produto, callback);
 };
 
